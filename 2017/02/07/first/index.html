@@ -10,7 +10,7 @@
     
     <title>
         
-            first | 
+            Sublime 结合 Evernote 保存 Markdown | 
         
         Hexo
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="first | Hexo">
+    <meta property="og:title" content="Sublime 结合 Evernote 保存 Markdown | Hexo">
     <meta property="og:description" content="null">
 
     <!--[if lte IE 9]>
@@ -262,7 +262,7 @@
         
     
             <p class="article-headline-p">
-                first
+                Sublime 结合 Evernote 保存 Markdown
             </p>
         </div>
 
@@ -321,7 +321,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=first&url=http://yoursite.com//2017/02/07/first/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Sublime 结合 Evernote 保存 Markdown&url=http://yoursite.com//2017/02/07/first/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -330,7 +330,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=first&url=http://yoursite.com//2017/02/07/first/index.html&via=John Doe" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Sublime 结合 Evernote 保存 Markdown&url=http://yoursite.com//2017/02/07/first/index.html&via=John Doe" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -382,7 +382,7 @@
 <p>获得 Developer Token 和 NoteStore URL</p>
 </blockquote>
 <p>点击网址 <a href="https://app.yinxiang.com/api/DeveloperToken.action" target="_blank" rel="external">印象笔记(中国)</a> 或者 <a href="https://www.evernote.com/api/DeveloperToken.action" target="_blank" rel="external">Evernote</a> 登录后来获取信息。<br>在 Sublime 中配置授权信息，Preferences &gt; Package Settings &gt; Evernote &gt; Settings - User 中添加</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="string">"noteStoreUrl"</span>: <span class="string">"https://app.yinxiang.com/shard/s2/notestore"</span>,</div><div class="line">    <span class="string">"token"</span>: <span class="string">"S=s2:U=1214b:E=160c62c6b4b:C=1596e7b3f40:P=1cd:A=en-devtoken:V=2:H=54cb838f79bc95ad68c8e7e5c7f6f790"</span>,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="string">"noteStoreUrl"</span>: <span class="string">""</span>,</div><div class="line">    <span class="string">"token"</span>: <span class="string">""</span>,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h3 id="配置-Evernote-快捷键"><a href="#配置-Evernote-快捷键" class="headerlink" title="配置 Evernote 快捷键"></a>配置 Evernote 快捷键</h3><p>可以参照 <a href="https://github.com/bordaigorl/sublime-evernote" target="_blank" rel="external">官网</a> 进行配置<br>我自己的配置如下，在 Preferences &gt; Key Bindings &gt; User 中添加</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123; <span class="string">"keys"</span>: [<span class="string">"ctrl+shift+e"</span>], <span class="string">"command"</span>: <span class="string">"show_overlay"</span>, <span class="string">"args"</span>: &#123;<span class="string">"overlay"</span>: <span class="string">"command_palette"</span>, <span class="string">"text"</span>: <span class="string">"Evernote: "</span>&#125; &#125;,</div><div class="line">&#123; <span class="string">"keys"</span>: [<span class="string">"ctrl+e"</span>, <span class="string">"ctrl+o"</span>], <span class="string">"command"</span>: <span class="string">"open_evernote_note"</span> &#125;,</div><div class="line">&#123; <span class="string">"keys"</span>: [<span class="string">"ctrl+e"</span>, <span class="string">"ctrl+n"</span>], <span class="string">"command"</span>: <span class="string">"new_evernote_note"</span> &#125;,</div><div class="line">&#123; <span class="string">"keys"</span>: [<span class="string">"ctrl+s"</span>], <span class="string">"command"</span>: <span class="string">"save_evernote_note"</span>, <span class="string">"context"</span>: [&#123;<span class="string">"key"</span>: <span class="string">"evernote_note"</span>&#125;, &#123;<span class="string">"key"</span>: <span class="string">"evernote_has_guid"</span>&#125;] &#125;,</div><div class="line">&#123; <span class="string">"keys"</span>: [<span class="string">"ctrl+s"</span>], <span class="string">"command"</span>: <span class="string">"send_to_evernote"</span>, <span class="string">"context"</span>: [&#123;<span class="string">"key"</span>: <span class="string">"evernote_note"</span>&#125;, &#123;<span class="string">"key"</span>: <span class="string">"evernote_has_guid"</span>, <span class="string">"operator"</span>: <span class="string">"equal"</span>, <span class="string">"operand"</span>: <span class="literal">false</span>&#125;] &#125;,</div></pre></td></tr></table></figure>
